@@ -1,0 +1,16 @@
+/home/dude/unikernel/zenoh-app/build/libuktime/__month_to_secs.o
+/home/dude/unikernel/zenoh-app/build/libuktime/__month_to_secs.d
+/home/dude/unikernel/zenoh-app/build/libuktime/__secs_to_tm.o
+/home/dude/unikernel/zenoh-app/build/libuktime/__secs_to_tm.d
+/home/dude/unikernel/zenoh-app/build/libuktime/timegm.o
+/home/dude/unikernel/zenoh-app/build/libuktime/timegm.d
+/home/dude/unikernel/zenoh-app/build/libuktime/__tm_to_secs.o
+/home/dude/unikernel/zenoh-app/build/libuktime/__tm_to_secs.d
+/home/dude/unikernel/zenoh-app/build/libuktime/__year_to_secs.o
+/home/dude/unikernel/zenoh-app/build/libuktime/__year_to_secs.d
+/home/dude/unikernel/zenoh-app/build/libuktime/time.o
+/home/dude/unikernel/zenoh-app/build/libuktime/time.d
+/home/dude/unikernel/zenoh-app/build/libuktime/timer.o
+/home/dude/unikernel/zenoh-app/build/libuktime/timer.d
+/home/dude/unikernel/zenoh-app/build/libuktime.ld.o
+/home/dude/unikernel/zenoh-app/build/libuktime.o

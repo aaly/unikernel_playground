@@ -1,0 +1,71 @@
+$(eval $(call addlib,apphellozenoh))
+
+APPHELLOZENOH_SRCS-y += $(APPHELLOZENOH_BASE)/main.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/mvar.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/bytes.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/vec.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/list.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/intmap.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/collections/string.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/espidf/network.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/espidf/system.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/zephyr/network.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/zephyr/system.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/unix/network.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/unix/system.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/arduino/ststm32/network.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/arduino/ststm32/system.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/system/arduino/esp32/system.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/manager.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/unicast/tcp.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/unicast/udp.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/endpoint.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/config/tcp.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/config/bt.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/config/udp.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/link.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/multicast/bt.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/link/multicast/udp.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/common/lease.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/common/join.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/common/rx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/common/read.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/common/tx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/manager.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/transport.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/unicast/link/rx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/unicast/link/task/lease.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/unicast/link/task/read.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/unicast/link/tx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/utils.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/peer_entry.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/multicast/link/rx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/multicast/link/task/lease.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/multicast/link/task/join.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/multicast/link/task/read.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/transport/multicast/link/tx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/scout.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/subscription.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/rx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/resource.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/utils.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/query.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/tx.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/session/queryable.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/session.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/memory.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/config.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/resource.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/primitives.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/logger.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/subscribe.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/api/query.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/property.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/msg.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/iobuf.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/codec.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/rname.c \
+$(APPHELLOZENOH_BASE)/zenoh-pico/src/protocol/msgcodec.c
+
+CINCLUDES    += -I$(APPHELLOZENOH_BASE)/zenoh-pico/include
+COMPFLAGS    += -DZENOH_LINUX -pthread
