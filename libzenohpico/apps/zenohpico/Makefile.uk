@@ -1,3 +1,5 @@
 $(eval $(call addlib,apphelloworld))
 
 APPHELLOWORLD_SRCS-y += $(APPHELLOWORLD_BASE)/main.c
+APPHELLOWORLD_CINCLUDES    += -I$(LIBZENOHPICO_BASE)/zenoh-pico/include -I$(LIBZENOHPICO_BASE)/ -I$(LIBZENOHPICO_BASE)/zenoh-pico/
+APPHELLOWORLD_CFLAGS-y += -DZENOH_LINUX

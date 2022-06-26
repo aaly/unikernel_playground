@@ -1,8 +1,0 @@
-/home/dude/unikernel/zenoh-app/build/libuknetdev/libparam.lds
-/home/dude/unikernel/zenoh-app/build/libuknetdev/libparam.lds.d
-/home/dude/unikernel/zenoh-app/build/libuknetdev/netbuf.o
-/home/dude/unikernel/zenoh-app/build/libuknetdev/netbuf.d
-/home/dude/unikernel/zenoh-app/build/libuknetdev/netdev.o
-/home/dude/unikernel/zenoh-app/build/libuknetdev/netdev.d
-/home/dude/unikernel/zenoh-app/build/libuknetdev.ld.o
-/home/dude/unikernel/zenoh-app/build/libuknetdev.o

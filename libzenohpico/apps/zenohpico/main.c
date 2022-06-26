@@ -16,7 +16,7 @@
 #include <string.h>
 #include <unistd.h>
 #include "zenoh-pico.h"
-int main(__((attribute unused))__ int argc, __((attribute unused))__ char *argv[])
+int main(int argc, char *argv[])
 {
     char *uri = "/demo/example/**";
     if (argc > 1)
