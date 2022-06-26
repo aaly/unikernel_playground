@@ -1,0 +1,17 @@
+---
+specification: '0.5'
+name: lwip
+unikraft:
+  version: 0.9.0
+targets:
+  - architecture: x86_64
+    platform: kvm
+libraries:
+  zenohpico:
+    version: 63a96f9
+  pthread-embedded:
+    version: e2705f9
+  newlib:
+    version: '6375324'
+  lwip:
+    version: 0.9.0
