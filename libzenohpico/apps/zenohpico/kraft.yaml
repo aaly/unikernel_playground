@@ -1,6 +1,6 @@
 ---
 specification: '0.5'
-name: lwip
+name: zenoh_hello
 unikraft:
   version: 0.9.0
 targets:
@@ -8,7 +8,7 @@ targets:
     platform: kvm
 libraries:
   zenohpico:
-    version: 63a96f9
+    version: staging
   pthread-embedded:
     version: e2705f9
   newlib:
